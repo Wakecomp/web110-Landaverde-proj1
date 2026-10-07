@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bono App | Sign Up</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: black;
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* Background */
+    .wrapper {
+      min-height: 100vh;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(255, 64, 50, 0.8),
+          rgba(71, 17, 116, 0.9)
+        ),
+        url('images/background.jpg') no-repeat center/cover;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+    }
+
+    /* Embedded Bono Logo */
+    .logo {
+      display: inline-block;
+      width: 130px;
+      text-decoration: none;
+    }
+
+    .logo svg {
+      display: block;
+      width: 130px;
+      height: auto;
+    }
+
+    .header .header-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .header .header-right i {
+      margin-right: 5px;
+    }
+
+    .header .header-right a {
+      color: white;
+    }
+
+    .header .header-right a:hover {
+      color: purple;
+    }
+
+    /* Main Content */
+    .main-content {
+      display: flex;
+      gap: 50px;
+      max-width: 1100px;
+      margin: 200px auto;
+      justify-content: center;
+      align-items: start;
+      height: 100%;
+      padding: 0 40px;
+    }
+
+    .main-content form {
+      flex: 1;
+    }
+
+    .main-content .text-container {
+      flex: 1;
+    }
+
+    /* Form */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      outline: 0;
+    }
+
+    .form-group textarea {
+      height: 100px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+
+    /* Button */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      border: 0;
+      border-radius: 20px;
+      background-color: #ff4032;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ff5c4d;
+    }
+
+    /* Text */
+    .text-container h1 {
+      font-size: 50px;
+      margin: 50px 0 20px;
+      line-height: 1.2;
+    }
+
+    .text-container {
+      font-size: 18px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .header {
+        padding: 30px 10px 10px;
+      }
+
+      .header,
+      .header .header-right {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .main-content {
+        flex-direction: column-reverse;
+        justify-content: start;
+        margin: auto;
+        padding: 50px;
+      }
+
+      .main-content form,
+      .main-content .text-container {
+        width: 100%;
+      }
+
+      .main-content h1 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 1.4;
+      }
+
+      .main-content p {
+        display: none;
+      }
+    }
+
+    /* Landscape / Short Screens */
+    @media (max-height: 500px) {
+      .main-content {
+        margin: 0 auto;
+      }
+
+      .main-content h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+
+      <!-- Bono Logo Embedded Directly Into HTML -->
+      <a href="index.html" class="logo">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 130 50"
+          role="img"
+          aria-label="Bono Logo"
+        >
+
+          <path
+            fill="white"
+            d="M7.532,43.172A26.089,26.089,0,0,1,3.966,39.91a31.279,31.279,0,0,1-2.3-2.843A20.334,20.334,0,0,1,.1,34.366a.09.09,0,0,1-.1-.08v-.222a.506.506,0,0,1,.478-.532.492.492,0,0,1,.133.012,8.787,8.787,0,0,1,1.632,2.038,25.355,25.355,0,0,0,4.366,4.6A30.024,30.024,0,0,0,14.4,44.782,30.4,30.4,0,0,0,26.359,46.82a32.378,32.378,0,0,0,9.163-1.345,22.571,22.571,0,0,0,8.352-4.556,22.807,22.807,0,0,0,2.9-3.057,21.382,21.382,0,0,0,2.343-3.73A23.585,23.585,0,0,0,50.644,30.2a13.682,13.682,0,0,0,.561-3.73,2.71,2.71,0,0,0-2.193-2.741,17.977,17.977,0,0,0-5.288-.652,37.294,37.294,0,0,0-6.62.571q-3.155.571-5.6,1.09-1.422,3.628-2.954,7.358t-2.544,6.115q-.3.836-.611,1.865a8.746,8.746,0,0,0-.361,2.14,18.02,18.02,0,0,0-.2,2.9,6.409,6.409,0,0,1-.761-.153,4.962,4.962,0,0,1-1.382-.6,4.861,4.861,0,0,1-1.372-1.294,3.581,3.581,0,0,1-.631-2.171,17.36,17.36,0,0,1,.3-2.8q.31-1.763.811-3.781t1.072-4.077q.561-2.038,1.072-3.577a1.215,1.215,0,0,1-.861-.673,13.307,13.307,0,0,1-.921-1.61,16,16,0,0,1-.761-1.814,4.552,4.552,0,0,1-.3-1.4.714.714,0,0,1,.511-.826h.08q1.222-.418,2.494-.724L26.78,19q.511-1.345,1-2.487t1-2.385l.711-2.171q.31-.927.561-1.865a6.211,6.211,0,0,0,.28-1.508L29.7,8.888l-.411.2a40.674,40.674,0,0,0-5.748,3.73,35.706,35.706,0,0,0-3.515,3.159A15.106,15.106,0,0,0,18.2,18.213a1.713,1.713,0,0,1-.711.826,7.634,7.634,0,0,1-2.694-2.956,6.677,6.677,0,0,1-.661-2.64,7.306,7.306,0,0,1,.2-1.763,2.284,2.284,0,0,1,.3-.724A16.181,16.181,0,0,1,15.924,9.6a24.2,24.2,0,0,1,2.694-2.283,38.648,38.648,0,0,1,4.226-2.691A41.347,41.347,0,0,1,28.7,1.947,40.5,40.5,0,0,1,33.71.551,26.085,26.085,0,0,1,39.188-.02,19.821,19.821,0,0,1,44.536.7a14.14,14.14,0,0,1,4.577,2.171,10.923,10.923,0,0,1,3.155,3.577,9.855,9.855,0,0,1,.3,8.7,16.177,16.177,0,0,1-1.833,3.363A9.467,9.467,0,0,1,54.4,21.525a9.476,9.476,0,0,1,1.322,5.493,18.416,18.416,0,0,1-2.984,10.456,25.312,25.312,0,0,1-7.13,7.134,30.86,30.86,0,0,1-9.013,4.077,33.216,33.216,0,0,1-8.552,1.294A33.656,33.656,0,0,1,7.532,43.172ZM47.54,17.479a9.028,9.028,0,0,0,1.933-5.7,5.163,5.163,0,0,0-.811-2.956,6.426,6.426,0,0,0-2-1.916,8.858,8.858,0,0,0-2.644-1.019,12.5,12.5,0,0,0-2.684-.367,18.109,18.109,0,0,0-6.309,1.09q-2.964,1.131-4.687,1.967l1.222.469a11.073,11.073,0,0,1,1.883,1.019,8.433,8.433,0,0,1,1.783,1.549,3.212,3.212,0,0,1,.811,2.171,4.579,4.579,0,0,1-.2,1.5q-.21.571-1,2.334,3-.418,6.309-.571A26.521,26.521,0,0,1,47.54,17.479Z"
+          ></path>
+
+          <text
+            x="55"
+            y="36"
+            fill="white"
+            font-size="26"
+            font-family="Open Sans, Arial, sans-serif"
+            font-weight="600"
+          >
+            Bono
+          </text>
+
+        </svg>
+
+      </a>
+
+      <div class="header-right">
+
+        <div>
+          <i class="fas fa-envelope"></i>
+          contact@bono.com
+        </div>
+
+        <div>
+          <i class="fas fa-phone"></i>
+          (+31) 021-800-8244
+        </div>
+
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+
+      </div>
+
+    </header>
+
+    <main class="main-content">
+
+      <form>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn">
+            Submit
+          </button>
+        </div>
+
+      </form>
+
+      <div class="text-container">
+
+        <h1>Coming Soon For Every Developer</h1>
+
+        <p>
+          Our new Bono web app will change the way you think about
+          content management and will allow you to focus on what's
+          really important. Use the contact form to send us your
+          thoughts
+        </p>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
